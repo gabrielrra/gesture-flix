@@ -1,0 +1,15 @@
+{
+  "name": "gestureflix",
+  "version": "1.0.0@alpha",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx browser-sync -w"
+  },
+  "keywords": [],
+  "author": "gabrielrra",
+  "license": "MIT",
+  "description": "GestureFlix - Semana JS Expert 7.0",
+  "devDependencies": {
+    "browser-sync": "^2.28.1"
+  }
+}

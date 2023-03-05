@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GestureFlix - BlinkToPlay</title>
+    <style>
+      body {
+        height: 100vh;
+      }
+      video {
+        width: 600px;
+        max-width: 100%;
+        margin: 10px;
+      }
+      button {
+        margin: 10px;
+      }
+      .button-container {
+        margin-left: 20px;
+      }
+      #video-back-button {
+        width: 32px;
+        height: 32px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="../titles"
+      ><img id="video-back-button" src="../../assets/back.png"
+    /></a>
+    <div class="button-container">
+      <div>
+        <button type="button" disabled id="init">Init Blink Recognition</button>
+        <output id="status"></output>
+      </div>
+    </div>
+
+    <video id="video">
+      <source
+        src="https://www.w3schools.com/html/mov_bbb.mp4"
+        type="video/mp4"
+      />
+      <source
+        src="https://www.w3schools.com/html/mov_bbb.ogg"
+        type="video/ogg"
+      />
+      Your browser does not support HTML5 video.
+    </video>
+    <script src="src/index.js" type="module"></script>
+  </body>
+</html>
